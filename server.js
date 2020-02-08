@@ -26,7 +26,12 @@ app.set("view engine", "handlebars");
 app.use(routes);
 
 var MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+  process.env.MONGODB_URI || "mongodb://localhost:27017/news_articles_db";
+
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true
+  // useCreateIndex: true
+});
 
 // listening to port
 app.listen(PORT, function() {

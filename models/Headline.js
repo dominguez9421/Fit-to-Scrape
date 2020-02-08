@@ -4,7 +4,6 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var headlineSchema = new Schema({
-  // headline, a string, must be entered
   headline: {
     type: String,
     required: true,

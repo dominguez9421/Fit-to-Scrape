@@ -2,7 +2,6 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-// Create the noteSchema with the schema object
 var noteSchema = new Schema({
   _headlineId: {
     type: Schema.Types.ObjectId,
