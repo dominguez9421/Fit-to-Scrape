@@ -104,7 +104,7 @@ $(document).ready(function() {
     $.ajax({
       method: "DELETE",
       url: "/api/headlines/" + articleToDelete._id
-    }).then(function(data) {
+    }).then(data => {
       if (data.ok) {
         initPage();
       }
